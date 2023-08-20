@@ -2,7 +2,7 @@ import React from "react";
 
 const Menus = () => {
   return (
-    <div className="w-full mx-auto bg-primary py-2">
+    <div className="w-full mx-auto bg-primary py-8 lg:py-6">
       <div className="flex justify-around items-center max-w-[1360px] mx-auto">
         {/** menus for large device */}
         <div className="hidden lg:block">
@@ -37,12 +37,13 @@ const Menus = () => {
           </div>
         </div>
 
-        <form className="form-control">
+        <form className="form-control flex-row gap-2">
           <input
             type="text"
             placeholder="Search for products"
-            className="input input-xs md:input-md w-full max-w-sm"
+            className="input input-primary input-xs md:input-md w-full max-w-sm"
           />
+          <button type="button" className="btn btn-xs md:btn-md btn-secondary">Go</button>
         </form>
       </div>
     </div>

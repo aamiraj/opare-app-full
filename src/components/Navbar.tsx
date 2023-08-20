@@ -25,7 +25,7 @@ const Navbar = () => {
             </label>
           </div>
 
-          <div className="flex">
+          <div className="flex w-[120px] md:w-[200px]">
             <Link href="/">
               <Image src={Logo} alt="Opare logo" width={170} quality={100} />
             </Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="flex gap-2">
+          <div className="flex lg:gap-2">
             <label className="avatar placeholder">
               <div className="rounded-full w-8">
                 <Link href="/cart">
@@ -58,7 +58,7 @@ const Navbar = () => {
             </label>
 
             {user ? (
-              <div className="dropdown dropdown-bottom">
+              <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="avatar placeholder">
                   <div className="bg-neutral-focus text-neutral-content rounded-full w-8">
                     <span className="text-xl">K</span>
