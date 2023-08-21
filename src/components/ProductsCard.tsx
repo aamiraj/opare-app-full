@@ -5,12 +5,12 @@ import Spice from "../assets/spice.jpg";
 const ProductsCard = () => {
   return (
     <>
-      <div className="card rounded-none w-64 mx-auto bg-white cursor-pointer hover:shadow-xl">
-        <figure className="px-8 pt-8">
+      <div className="card rounded-none w-72 lg:w-64 mx-auto bg-white cursor-pointer hover:shadow-xl">
+        <figure className="px-8 pt-8 border border-blue-900 transition ease-out hover:scale-90">
           <Image width={200} src={Spice} alt="Spice" className="rounded-xl" />
         </figure>
-        <div className="card-body items-center text-center">
-          <h2 className="card-title">Tarmuric Powder 200gm</h2>
+        <div className="card-body items-center text-center font-bold">
+          <h2 className="">Tarmuric Powder 200gm</h2>
           <p>Spices</p>
           <p>TK. 100</p>
           <div className="card-actions">

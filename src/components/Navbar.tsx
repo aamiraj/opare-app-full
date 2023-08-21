@@ -48,7 +48,7 @@ const Navbar = () => {
 
           <div className="flex w-[120px] md:w-[200px]">
             <Link href="/">
-              <Image src={Logo} alt="Opare logo" width={170} quality={100} />
+              <Image src={Logo} alt="Opare logo" width={120} quality={100} />
             </Link>
           </div>
           <div className="hidden lg:block">
@@ -117,7 +117,7 @@ const Navbar = () => {
       {/**drawer side */}
       <div className="drawer-side z-50">
         <label htmlFor="appdrawer" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-80 h-full bg-base-200">
+        <ul className="menu p-4 w-40 h-full bg-base-200">
           {/* Sidebar content here */}
           {navlinks.map((link, i) => {
             const isActive: boolean = pathname === link.href;
