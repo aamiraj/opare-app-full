@@ -82,7 +82,7 @@ const Navbar = () => {
               <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="avatar placeholder">
                   <div className="bg-neutral-focus text-neutral-content rounded-full w-8">
-                    <span className="text-xl">K</span>
+                    <span className="text-xl">S</span>
                   </div>
                 </label>
                 <ul
@@ -117,7 +117,7 @@ const Navbar = () => {
       {/**drawer side */}
       <div className="drawer-side z-50">
         <label htmlFor="appdrawer" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-40 h-full bg-base-200">
+        <ul className="menu p-4 w-56 h-full bg-base-100">
           {/* Sidebar content here */}
           {navlinks.map((link, i) => {
             const isActive: boolean = pathname === link.href;
