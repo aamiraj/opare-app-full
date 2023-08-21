@@ -5,8 +5,8 @@ import Spice from "../assets/spice.jpg";
 const ProductsCard = () => {
   return (
     <>
-      <div className="card w-80 mx-auto bg-white cursor-pointer hover:shadow-xl">
-        <figure className="px-10 pt-10">
+      <div className="card rounded-none w-64 mx-auto bg-white cursor-pointer hover:shadow-xl">
+        <figure className="px-8 pt-8">
           <Image width={200} src={Spice} alt="Spice" className="rounded-xl" />
         </figure>
         <div className="card-body items-center text-center">

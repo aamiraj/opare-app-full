@@ -3,12 +3,33 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Logo from "../assets/logo_big.png";
 import { BsCart3, BsPersonCircle } from "react-icons/bs";
 import { HiMenuAlt2 } from "react-icons/hi";
 
+const navlinks = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "Products",
+    href: "/products",
+  },
+  {
+    name: "About",
+    href: "/about",
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
+];
+
 const Navbar = () => {
   const [user] = React.useState(true);
+  const pathname = usePathname();
 
   return (
     <div className="drawer">
@@ -32,20 +53,20 @@ const Navbar = () => {
           </div>
           <div className="hidden lg:block">
             <ul className="menu menu-horizontal gap-1">
-              <li>
-                <Link className="active" href="/">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/products">Products</Link>
-              </li>
-              <li>
-                <Link href="/about">About</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact</Link>
-              </li>
+              {navlinks.map((link, i) => {
+                const isActive: boolean = pathname === link.href;
+
+                return (
+                  <li key={i}>
+                    <Link
+                      className={isActive ? "active" : undefined}
+                      href={link.href}
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="flex lg:gap-2">
@@ -98,18 +119,20 @@ const Navbar = () => {
         <label htmlFor="appdrawer" className="drawer-overlay"></label>
         <ul className="menu p-4 w-80 h-full bg-base-200">
           {/* Sidebar content here */}
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/products">Products</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
+          {navlinks.map((link, i) => {
+            const isActive: boolean = pathname === link.href;
+
+            return (
+              <li key={i}>
+                <Link
+                  className={isActive ? "active" : undefined}
+                  href={link.href}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>

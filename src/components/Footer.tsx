@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-primary text-white">
+    <div className="bg-info text-white">
       <footer className="footer max-w-[1360px] mx-auto p-10 mt-10">
         <div>
           <Image
@@ -14,7 +14,6 @@ const Footer = () => {
             alt="Opare logo"
             width={170}
             quality={100}
-            style={{ filter: "grayscale(100%" }}
           />
           <p className="text-md font-normal">
             Opare Products and Services Ltd.

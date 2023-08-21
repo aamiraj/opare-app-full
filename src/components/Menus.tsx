@@ -2,8 +2,8 @@ import React from "react";
 
 const Menus = () => {
   return (
-    <div className="w-full mx-auto bg-primary py-8 lg:py-6">
-      <div className="flex justify-around items-center max-w-[1360px] mx-auto">
+    <div className="w-full mx-auto bg-primary py-8 lg:py-4">
+      <div className="flex justify-around lg:justify-between items-center max-w-[1360px] mx-auto">
         {/** menus for large device */}
         <div className="hidden lg:block">
           <ul className="menu menu-horizontal text-base-100">
@@ -22,8 +22,13 @@ const Menus = () => {
 
         <div className="block lg:hidden">
           <div className="dropdown dropdown-bottom">
-            <label tabIndex={1} className="text-white">Our Products</label>
-            <ul tabIndex={1} className="dropdown-content z-10 menu menu-sm p-2 shadow bg-base-100 w-32">
+            <label tabIndex={1} className="text-white">
+              Our Products
+            </label>
+            <ul
+              tabIndex={1}
+              className="dropdown-content z-10 menu menu-sm p-2 shadow bg-base-100 w-32"
+            >
               <li>
                 <a>Spices</a>
               </li>
@@ -41,9 +46,11 @@ const Menus = () => {
           <input
             type="text"
             placeholder="Search for products"
-            className="input input-primary input-xs md:input-md w-full max-w-sm"
+            className="input input-primary input-sm md:input-md w-full max-w-sm"
           />
-          <button type="button" className="btn btn-xs md:btn-md btn-secondary">Go</button>
+          <button type="button" className="btn btn-sm md:btn-md btn-secondary">
+            Go
+          </button>
         </form>
       </div>
     </div>

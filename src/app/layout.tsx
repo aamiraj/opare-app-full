@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Karla } from "next/font/google";
 import Footer from "@/components/Footer";
+import Menus from "@/components/Menus";
 
 const karla = Karla({ weight: ["400"], subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <header className="max-w-[1360px] m-auto">
           <Navbar />
         </header>
+        <Menus />
         <div>{children}</div>
         <Footer />
       </body>
