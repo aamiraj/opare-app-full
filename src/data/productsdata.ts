@@ -39,3 +39,78 @@ export const amounts = [
     amount: "5kg",
   },
 ];
+
+export const products = [
+  {
+    id: "1",
+    title: "Turmeric Powder 200g",
+    img: "",
+    price: "100",
+    quantity: "200g",
+    category: "Spices",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
+    reviews: [{}],
+    rating: "3"
+  },
+  {
+    id: "2",
+    title: "Turmeric Powder 200g",
+    img: "",
+    price: "100",
+    quantity: "200g",
+    category: "Spices",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
+    reviews: [{}],
+    rating: "3"
+  },
+  {
+    id: "3",
+    title: "Turmeric Powder 200g",
+    img: "",
+    price: "100",
+    quantity: "200g",
+    category: "Spices",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
+    reviews: [{}],
+    rating: "3"
+  },
+  {
+    id: "4",
+    title: "Turmeric Powder 200g",
+    img: "",
+    price: "100",
+    quantity: "200g",
+    category: "Spices",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
+    reviews: [{}],
+    rating: "3"
+  },
+  {
+    id: "5",
+    title: "Turmeric Powder 200g",
+    img: "",
+    price: "100",
+    quantity: "200g",
+    category: "Spices",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
+    reviews: [{}],
+    rating: "3"
+  },
+  {
+    id: "6",
+    title: "Turmeric Powder 200g",
+    img: "",
+    price: "100",
+    quantity: "200g",
+    category: "Spices",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
+    reviews: [{}],
+    rating: "3"
+  },
+];

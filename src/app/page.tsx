@@ -8,7 +8,7 @@ export default function Home() {
       <main className="bg-white carouselAnimation">
         <Carousel />
       </main>
-      <section>
+      <section className="max-w-[1080px] mx-auto ">
         <OurProducts />
       </section>
     </>

@@ -1,23 +1,15 @@
 import React from "react";
 import ProductsCard from "./ProductsCard";
+import { products } from "@/data/productsdata";
 
 const OurProducts = () => {
   return (
     <div>
       <h1>Our Products</h1>
-      <div className="max-w-[1360px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-4">
-        <ProductsCard />
-        <ProductsCard />
-        <ProductsCard />
-        <ProductsCard />
-        <ProductsCard />
-        <ProductsCard />
-        <ProductsCard />
-        <ProductsCard />
-        <ProductsCard />
-        <ProductsCard />
-        <ProductsCard />
-        <ProductsCard />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-4">
+        {products.map((prod, i) => (
+          <ProductsCard key={i} appProps={prod} />
+        ))}
       </div>
     </div>
   );
