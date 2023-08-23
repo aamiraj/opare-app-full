@@ -40,11 +40,13 @@ export const amounts = [
   },
 ];
 
+import Spice from "../assets/spice.jpg";
+
 export const products = [
   {
     id: "1",
     title: "Turmeric Powder 200g",
-    img: "",
+    img: [Spice, Spice, Spice],
     price: "100",
     quantity: "200g",
     category: "Spices",
@@ -56,7 +58,7 @@ export const products = [
   {
     id: "2",
     title: "Turmeric Powder 200g",
-    img: "",
+    img: [Spice, Spice, Spice],
     price: "100",
     quantity: "200g",
     category: "Spices",
@@ -68,7 +70,7 @@ export const products = [
   {
     id: "3",
     title: "Turmeric Powder 200g",
-    img: "",
+    img: [Spice, Spice, Spice],
     price: "100",
     quantity: "200g",
     category: "Spices",
@@ -80,7 +82,7 @@ export const products = [
   {
     id: "4",
     title: "Turmeric Powder 200g",
-    img: "",
+    img: [Spice, Spice, Spice],
     price: "100",
     quantity: "200g",
     category: "Spices",
@@ -92,7 +94,7 @@ export const products = [
   {
     id: "5",
     title: "Turmeric Powder 200g",
-    img: "",
+    img: [Spice, Spice, Spice],
     price: "100",
     quantity: "200g",
     category: "Spices",
@@ -104,7 +106,7 @@ export const products = [
   {
     id: "6",
     title: "Turmeric Powder 200g",
-    img: "",
+    img: [Spice, Spice, Spice],
     price: "100",
     quantity: "200g",
     category: "Spices",
