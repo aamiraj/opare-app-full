@@ -44,11 +44,11 @@ const Menus = () => {
           </div>
         </div>
 
-        <form className="form-control flex-row gap-2 order-1">
+        <form className="form-control lg:w-1/2 flex-row gap-2 order-1">
           <input
             type="text"
             placeholder="Search for products"
-            className="input input-primary input-sm md:input-md w-full max-w-xs"
+            className="input input-primary input-sm md:input-md w-full"
           />
           <button type="button" className="btn btn-sm md:btn-md btn-secondary">
             Go

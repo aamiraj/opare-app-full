@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import Spice from "../assets/spice.jpg";
+import Spice from "../assets/spice1.jpg";
 import Link from "next/link";
 
 interface Details {
@@ -34,7 +34,7 @@ const ProductsCard = ({ appProps }: { appProps: Details }) => {
           <p className="badge">{category}</p>
           <p>TK. {price}</p>
           <div className="card-actions">
-            <button className="btn">Order Now</button>
+            <button className="btn btn-secondary">Order Now</button>
           </div>
         </div>
       </div>

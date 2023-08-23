@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-size: 16px;
+html {
+  @apply scroll-smooth;
 }
 
 a {
@@ -22,9 +22,7 @@ h1 {
 }
 
 .btn {
-  @apply bg-secondary;
   @apply text-base-100;
-  @apply hover:bg-secondary-focus;
 }
 
 @keyframes myAnimation {

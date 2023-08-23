@@ -1,4 +1,4 @@
-import Carousel from "@/components/Carousel/Carousel";
+import Carousel from "@/components/Carousel";
 import OurProducts from "@/components/OurProducts";
 import "animate.css";
 import Carousel1 from "../assets/1.png";

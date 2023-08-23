@@ -1,0 +1,40 @@
+.eachslide {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  
+  .eachslide > div {
+    width: 50%;
+    margin: auto;
+  }
+  
+  .eachslide > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+  }
+  
+  .indicator {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+    background-color: #8CB8EE;
+  }
+  
+  .indicator.active {
+    background-color: #0071BC;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .eachslide > div {
+      width: 100%;
+    }
+  }
+  
