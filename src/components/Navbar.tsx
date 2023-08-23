@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import Logo from "../assets/logo_big.png";
 import { BsCart3, BsPersonCircle } from "react-icons/bs";
 import { HiMenuAlt2 } from "react-icons/hi";
+import "../styles/navbar.css"
 
 const navlinks = [
   {
@@ -18,11 +19,11 @@ const navlinks = [
     href: "/products",
   },
   {
-    name: "About",
-    href: "/about",
+    name: "Customer Service",
+    href: "/customerservice",
   },
   {
-    name: "Contact",
+    name: "Contact Us",
     href: "/contact",
   },
 ];
@@ -40,7 +41,7 @@ const Navbar = () => {
           <div className="flex-none lg:hidden">
             <label
               htmlFor="appdrawer"
-              className="btn btn-circle btn-ghost text-xl"
+              className="btn btn-circle btn-secondary text-xl"
             >
               <HiMenuAlt2 />
             </label>
@@ -52,14 +53,14 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="hidden lg:block">
-            <ul className="menu menu-horizontal gap-1">
+            <ul className="flex justify-evenly items-center gap-8">
               {navlinks.map((link, i) => {
                 const isActive: boolean = pathname === link.href;
 
                 return (
                   <li key={i}>
                     <Link
-                      className={isActive ? "active" : undefined}
+                      className={`navlinks ${isActive ? "activelink" : undefined}`}
                       href={link.href}
                     >
                       {link.name}

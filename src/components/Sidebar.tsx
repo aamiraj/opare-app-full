@@ -10,7 +10,7 @@ const Sidebar = ({ Appprops }: { Appprops: React.ReactNode }) => {
         <div className="drawer-content flex flex-col items-center justify-center">
           <label
             htmlFor="appdrawer2"
-            className="btn btn-primary my-4 w-[90%] drawer-button lg:hidden"
+            className="btn btn-secondary my-4 w-[90%] drawer-button lg:hidden"
           >
             Filter and Categories
           </label>

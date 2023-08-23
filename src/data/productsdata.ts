@@ -1,3 +1,21 @@
+export const menus = [
+  {
+    id: "1",
+    name: "All",
+  },
+  {
+    id: "2",
+    name: "Best Deals",
+  },
+  {
+    id: "3",
+    name: "Featured Products",
+  },
+  {
+    id: "4",
+    name: "New Arrival",
+  },
+];
 export const categories = [
   {
     id: "1",
@@ -55,7 +73,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
     reviews: [{}],
-    rating: "3"
+    rating: "3",
   },
   {
     id: "2",
@@ -67,7 +85,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
     reviews: [{}],
-    rating: "3"
+    rating: "3",
   },
   {
     id: "3",
@@ -79,7 +97,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
     reviews: [{}],
-    rating: "3"
+    rating: "3",
   },
   {
     id: "4",
@@ -91,7 +109,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
     reviews: [{}],
-    rating: "3"
+    rating: "3",
   },
   {
     id: "5",
@@ -103,7 +121,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
     reviews: [{}],
-    rating: "3"
+    rating: "3",
   },
   {
     id: "6",
@@ -115,6 +133,6 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
     reviews: [{}],
-    rating: "3"
+    rating: "3",
   },
 ];

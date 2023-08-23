@@ -8,13 +8,10 @@ const ProductCarousel = ({
 }: {
   carousels: Array<StaticImageData>;
 }) => {
-  const indicators = (index: number | undefined) => (
-    <div className="indicator"></div>
-  );
   return (
     <div className="p-2 border border-red-200">
       <div>
-        <Fade indicators={indicators} arrows={true} canSwipe={true}>
+        <Fade indicators={false} arrows={true} canSwipe={true}>
           {carousels.map((caros, i) => (
             <div key={i} className="eachslide">
               <div style={{ width: "100%" }}>

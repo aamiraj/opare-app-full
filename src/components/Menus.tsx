@@ -1,3 +1,4 @@
+import { menus } from "@/data/productsdata";
 import React from "react";
 import { FaAngleDown } from "react-icons/fa";
 const Menus = () => {
@@ -7,15 +8,11 @@ const Menus = () => {
         {/** menus for large device */}
         <div className="hidden lg:block">
           <ul className="menu menu-horizontal text-base-100">
-            <li>
-              <a>Spices</a>
-            </li>
-            <li>
-              <a>Mustard Oil</a>
-            </li>
-            <li>
-              <a>Honey</a>
-            </li>
+            {menus.map((item, i) => (
+              <li key={i}>
+                <a>{item.name}</a>
+              </li>
+            ))}
           </ul>
         </div>
         {/** mesnus for small devices */}
@@ -23,7 +20,8 @@ const Menus = () => {
         <div className="block lg:hidden order-2">
           <div className="dropdown dropdown-bottom">
             <label tabIndex={0} className="flex items-center text-white">
-              Our Products <span className="p-1">
+              Our Deals
+              <span className="p-2">
                 <FaAngleDown />
               </span>
             </label>
@@ -31,15 +29,11 @@ const Menus = () => {
               tabIndex={0}
               className="dropdown-content z-10 menu menu-sm p-2 shadow bg-base-100 w-32"
             >
-              <li>
-                <a>Spices</a>
+              {menus.map((item, i) => (
+              <li key={i}>
+                <a>{item.name}</a>
               </li>
-              <li>
-                <a>Mustard Oil</a>
-              </li>
-              <li>
-                <a>Honey</a>
-              </li>
+            ))}
             </ul>
           </div>
         </div>

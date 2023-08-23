@@ -1,0 +1,13 @@
+.navlinks {
+  padding: 4px;
+  color: #0071bc;
+}
+
+.navlinks:hover {
+  color: #f6aa1c;
+  text-decoration: underline;
+}
+.navlinks.activelink {
+  color: #f6aa1c;
+  text-decoration: underline;
+}
