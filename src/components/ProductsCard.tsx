@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import Spice from "../assets/spice.jpg";
 import Link from "next/link";
@@ -6,7 +6,7 @@ import Link from "next/link";
 interface Details {
   id: string;
   title: string;
-  img: string;
+  img: Array<StaticImageData>;
   quantity: string | number;
   price: string | number;
   description: string;
