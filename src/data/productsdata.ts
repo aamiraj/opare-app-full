@@ -69,11 +69,21 @@ export const products = [
     img: [Spice1, Spice2, Spice3],
     price: "100",
     quantity: "200g",
+    stock: true,
     category: "Spices",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
-    reviews: [{}],
-    rating: "3",
+    reviews: [
+      {
+        name: "John Doe",
+        email: "john@gmail.com",
+        comment: "This product is good.",
+        rating: "4",
+        verified: true,
+        date: "2023-08-25T12:00:00-06:00"
+      },
+    ],
+    avgRating: "3",
   },
   {
     id: "2",
@@ -81,11 +91,12 @@ export const products = [
     img: [Spice1, Spice2, Spice3],
     price: "100",
     quantity: "200g",
+    stock: true,
     category: "Spices",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
     reviews: [{}],
-    rating: "3",
+    avgRating: "3",
   },
   {
     id: "3",
@@ -93,11 +104,12 @@ export const products = [
     img: [Spice1, Spice2, Spice3],
     price: "100",
     quantity: "200g",
+    stock: true,
     category: "Spices",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
     reviews: [{}],
-    rating: "3",
+    avgRating: "3",
   },
   {
     id: "4",
@@ -105,11 +117,12 @@ export const products = [
     img: [Spice1, Spice2, Spice3],
     price: "100",
     quantity: "200g",
+    stock: true,
     category: "Spices",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
     reviews: [{}],
-    rating: "3",
+    avgRating: "3",
   },
   {
     id: "5",
@@ -117,11 +130,12 @@ export const products = [
     img: [Spice1, Spice2, Spice3],
     price: "100",
     quantity: "200g",
+    stock: true,
     category: "Spices",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
     reviews: [{}],
-    rating: "3",
+    avgRating: "3",
   },
   {
     id: "6",
@@ -129,10 +143,11 @@ export const products = [
     img: [Spice1, Spice2, Spice3],
     price: "100",
     quantity: "200g",
+    stock: true,
     category: "Spices",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto doloribus, id quam corporis consequatur dolor modi soluta tempore in! Velit quasi quae minima blanditiis fugit nam deleniti illo quo!",
     reviews: [{}],
-    rating: "3",
+    avgRating: "3",
   },
 ];

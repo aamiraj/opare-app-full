@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import StarRating from "@/components/StarRating";
 import React from "react";
 import ProductCarousel from "./ProductCarousel";
+import Link from "next/link";
 
 const initialState = { quantity: 1 };
 const Min = 1;
@@ -52,14 +53,36 @@ const ProductDetails = () => {
 
   if (foundProd) {
     return (
-      <div>
-        <div className="min-h-screen max-w-[1080px] mx-auto bg-base-100 p-12">
+      <>
+        <div className="min-h-[90vh]bg-base-100 p-12">
+          <div className="text-sm breadcrumbs">
+            <ul>
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href={"/products"}>Products</Link>
+              </li>
+              <li>
+                <a href={"#" + foundProd.title}>{foundProd.title}</a>
+              </li>
+            </ul>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <ProductCarousel carousels={foundProd.img} />
             <div className="">
               <h2 className="text-3xl font-bold">{foundProd.title}</h2>
-              <p className="badge block my-2">{foundProd.category}</p>
-              <StarRating stars={parseInt(foundProd.rating)} />
+              <p>
+                <span className="badge bg-info m-2">{foundProd.category}</span>
+                <span
+                  className={`badge m-2 ${
+                    foundProd.stock ? "bg-success" : "bg-error"
+                  }`}
+                >
+                  {foundProd.stock ? "In Stock" : "Out of Stock"}
+                </span>
+              </p>
+              <StarRating stars={parseInt(foundProd.avgRating)} />
               <div className="divider"></div>
               <p className="text-2xl text-error my-2">
                 TK. <span className="font-extrabold">{foundProd.price}</span>
@@ -110,7 +133,7 @@ const ProductDetails = () => {
             </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 };
