@@ -55,7 +55,7 @@ const ProductDetails = () => {
     return (
       <>
         <div className="min-h-[90vh]bg-base-100 p-12">
-          <div className="text-sm breadcrumbs">
+          <div className="hidden md:block text-sm breadcrumbs">
             <ul>
               <li>
                 <Link href="/">Home</Link>

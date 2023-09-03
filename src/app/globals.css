@@ -70,3 +70,7 @@ input[type="number"] {
     opacity: 1;
   }
 }
+
+svg {
+  font-size: 28px;
+}

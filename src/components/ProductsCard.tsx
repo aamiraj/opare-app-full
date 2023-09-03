@@ -12,7 +12,7 @@ interface Details {
   description: string;
   category: string;
   reviews: Array<{}>;
-  rating: string;
+  avgRating: string;
 }
 
 const ProductsCard = ({ appProps }: { appProps: Details }) => {
@@ -31,7 +31,7 @@ const ProductsCard = ({ appProps }: { appProps: Details }) => {
         </figure>
         <div className="card-body items-center text-center font-bold">
           <h2 className="">{title}</h2>
-          <p className="badge">{category}</p>
+          <p className="badge badge-info">{category}</p>
           <p>TK. {price}</p>
           <div className="card-actions">
             <button className="btn btn-secondary">Order Now</button>

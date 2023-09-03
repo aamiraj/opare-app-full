@@ -2,18 +2,22 @@ export const menus = [
   {
     id: "1",
     name: "All",
+    href: "/products",
   },
   {
     id: "2",
     name: "Best Deals",
+    href: "/products",
   },
   {
     id: "3",
     name: "Featured Products",
+    href: "/products",
   },
   {
     id: "4",
     name: "New Arrival",
+    href: "/products",
   },
 ];
 export const categories = [
@@ -80,7 +84,7 @@ export const products = [
         comment: "This product is good.",
         rating: "4",
         verified: true,
-        date: "2023-08-25T12:00:00-06:00"
+        date: "2023-08-25T12:00:00-06:00",
       },
     ],
     avgRating: "3",

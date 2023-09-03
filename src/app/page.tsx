@@ -10,7 +10,7 @@ export default function Home() {
   const images = [Carousel1, Carousel2, Carousel3]
   return (
     <>
-      <main className="bg-white carouselAnimation">
+      <main className="bg-white">
         <Carousel carousels={images} />
       </main>
       <section className="max-w-[1080px] mx-auto ">

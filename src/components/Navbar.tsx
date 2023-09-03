@@ -1,117 +1,27 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+import "../styles/navbar.css";
+import { menus } from "@/data/productsdata";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import Logo from "../assets/logo_big.png";
-import { BsCart3, BsPersonCircle } from "react-icons/bs";
-import { HiMenuAlt2 } from "react-icons/hi";
-import "../styles/navbar.css"
-
-const navlinks = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "Products",
-    href: "/products",
-  },
-  {
-    name: "Customer Service",
-    href: "/customerservice",
-  },
-  {
-    name: "Contact Us",
-    href: "/contact",
-  },
-];
 
 const Navbar = () => {
-  const [user] = React.useState(true);
-  const pathname = usePathname();
-
   return (
     <div className="drawer">
       <input className="drawer-toggle" id="appdrawer" type="checkbox" />
-      <div className="drawer-content animate__animated animate__fadeInDown">
+      <div className="drawer-content hidden lg:block">
         {/* navbar*/}
-        <div className="navbar justify-between bg-base-100">
-          <div className="flex-none lg:hidden">
-            <label
-              htmlFor="appdrawer"
-              className="btn btn-circle btn-secondary text-xl"
-            >
-              <HiMenuAlt2 />
-            </label>
-          </div>
-
-          <div className="flex w-[120px] md:w-[200px]">
-            <Link href="/">
-              <Image src={Logo} alt="Opare logo" width={120} quality={100} />
-            </Link>
-          </div>
+        <div className="navbar justify-between bg-primary">
           <div className="hidden lg:block">
-            <ul className="flex justify-evenly items-center gap-8">
-              {navlinks.map((link, i) => {
-                const isActive: boolean = pathname === link.href;
+            {/** menus for large device */}
 
-                return (
-                  <li key={i}>
-                    <Link
-                      className={`navlinks ${isActive ? "activelink" : undefined}`}
-                      href={link.href}
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                );
-              })}
+            <ul className="menu menu-horizontal">
+              {menus.map((item, i) => (
+                <li key={i}>
+                  <Link href={item.href}>{item.name}</Link>
+                </li>
+              ))}
             </ul>
-          </div>
-          <div className="flex lg:gap-2">
-            <label className="avatar placeholder">
-              <div className="rounded-full w-8">
-                <Link href="/cart">
-                  <BsCart3 />
-                </Link>
-              </div>
-            </label>
-
-            {user ? (
-              <div className="dropdown dropdown-end">
-                <label tabIndex={0} className="avatar placeholder">
-                  <div className="bg-neutral-focus text-neutral-content rounded-full w-8">
-                    <span className="text-xl">S</span>
-                  </div>
-                </label>
-                <ul
-                  tabIndex={0}
-                  className="mt-3 z-10 p-2 shadow menu menu-xs dropdown-content bg-base-100 w-28"
-                >
-                  <li>
-                    <a className="justify-between">Profile</a>
-                  </li>
-                  <li>
-                    <a>Settings</a>
-                  </li>
-                  <li>
-                    <a>Logout</a>
-                  </li>
-                </ul>
-              </div>
-            ) : (
-              <div>
-                <label className="avatar placeholder">
-                  <div className="rounded-full w-8">
-                    <Link href="/cart">
-                      <BsPersonCircle />
-                    </Link>
-                  </div>
-                </label>
-              </div>
-            )}
           </div>
         </div>
       </div>
@@ -120,20 +30,11 @@ const Navbar = () => {
         <label htmlFor="appdrawer" className="drawer-overlay"></label>
         <ul className="menu p-4 w-56 h-full bg-base-100">
           {/* Sidebar content here */}
-          {navlinks.map((link, i) => {
-            const isActive: boolean = pathname === link.href;
-
-            return (
-              <li key={i}>
-                <Link
-                  className={isActive ? "active" : undefined}
-                  href={link.href}
-                >
-                  {link.name}
-                </Link>
-              </li>
-            );
-          })}
+          {menus.map((item, i) => (
+            <li key={i}>
+              <Link href={item.href}>{item.name}</Link>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

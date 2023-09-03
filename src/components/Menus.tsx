@@ -1,53 +1,106 @@
-import { menus } from "@/data/productsdata";
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
-import { FaAngleDown } from "react-icons/fa";
+import Logo from "../assets/logo_big.png";
+import {
+  HiMenuAlt2,
+  HiOutlineShoppingCart,
+  HiOutlineUserCircle,
+  HiOutlineSearch,
+} from "react-icons/hi";
+
 const Menus = () => {
+  const [user] = React.useState(false);
+
   return (
-    <div className="w-full mx-auto bg-primary p-8 lg:p-4">
-      <div className="flex flex-col lg:flex-row gap-3 lg:justify-between lg:items-center max-w-[1360px] mx-auto">
-        {/** menus for large device */}
-        <div className="hidden lg:block">
-          <ul className="menu menu-horizontal text-base-100">
-            {menus.map((item, i) => (
-              <li key={i}>
-                <a>{item.name}</a>
-              </li>
-            ))}
-          </ul>
+    <div className="w-full mx-auto p-8 lg:p-4">
+      <div className="flex flex-col justify-center items-center lg:flex-row gap-3 lg:justify-between max-w-[1360px] mx-auto">
+        <div className="flex-none absolute top-8 left-8 lg:hidden">
+          <label
+            htmlFor="appdrawer"
+            className="btn btn-circle btn-secondary text-xl"
+          >
+            <HiMenuAlt2 />
+          </label>
         </div>
-        {/** mesnus for small devices */}
-
-        <div className="block lg:hidden order-2">
-          <div className="dropdown dropdown-bottom">
-            <label tabIndex={0} className="flex items-center text-white">
-              Our Deals
-              <span className="p-2">
-                <FaAngleDown />
-              </span>
-            </label>
-            <ul
-              tabIndex={0}
-              className="dropdown-content z-10 menu menu-sm p-2 shadow bg-base-100 w-32"
-            >
-              {menus.map((item, i) => (
-              <li key={i}>
-                <a>{item.name}</a>
-              </li>
-            ))}
-            </ul>
-          </div>
+        <div className="flex w-[120px] md:w-[200px]">
+          <Link href="/">
+            <Image src={Logo} alt="Opare logo" width={120} quality={100} />
+          </Link>
         </div>
 
-        <form className="form-control lg:w-1/2 flex-row gap-2 order-1">
+        <div className="join w-full md:w-1/2">
           <input
             type="text"
             placeholder="Search for products"
-            className="input input-primary input-sm md:input-md w-full"
+            className="input input-primary rounded-none w-full"
           />
-          <button type="button" className="btn btn-sm md:btn-md btn-secondary">
-            Go
+          <button type="button" className="btn btn-secondary rounded-none">
+            <HiOutlineSearch />
           </button>
-        </form>
+        </div>
+
+        <div className="gap-2 hidden lg:flex">
+          <label className="avatar placeholder">
+            <div className="rounded-full w-8">
+              <Link href="/cart">
+                <HiOutlineShoppingCart />
+              </Link>
+            </div>
+          </label>
+
+          {user ? (
+            <div className="dropdown dropdown-end">
+              <label tabIndex={0} className="avatar placeholder">
+                <div className="bg-neutral-focus text-neutral-content rounded-full w-8">
+                  <span className="text-xl">S</span>
+                </div>
+              </label>
+              <ul
+                tabIndex={0}
+                className="mt-3 z-10 p-2 shadow menu menu-md dropdown-content bg-base-100 w-28"
+              >
+                <li>
+                  <Link href="/profile">Profile</Link>
+                </li>
+                <li>
+                  <Link href="/dashboard">dashboard</Link>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    onClick={() => console.log("Logged out")}
+                  >
+                    Logout
+                  </button>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <div className="dropdown dropdown-end">
+              <label tabIndex={0} className="avatar placeholder">
+                <div className="rounded-full w-8">
+                  <span>
+                    <HiOutlineUserCircle />
+                  </span>
+                </div>
+              </label>
+              <ul
+                tabIndex={0}
+                className="mt-3 z-10 p-2 shadow menu menu-md dropdown-content bg-base-100 w-28"
+              >
+                <li>
+                  <Link href="/log-in">Log In</Link>
+                </li>
+                <li>
+                  <Link href="/sign-up">Sign Up</Link>
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

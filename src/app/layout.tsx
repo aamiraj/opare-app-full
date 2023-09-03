@@ -5,6 +5,7 @@ import { Karla } from "next/font/google";
 import Footer from "@/components/Footer";
 import Menus from "@/components/Menus";
 import ScrollTopButton from "@/components/ScrollTopButton";
+import BottomNav from "@/components/BottomNav";
 
 const karla = Karla({ weight: ["400"], subsets: ["latin"] });
 
@@ -22,13 +23,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${karla.className}`}>
-        <header className="max-w-[1360px] m-auto">
+        <header className="">
+          <Menus />
           <Navbar />
         </header>
-        <Menus />
         <div>{children}</div>
         <Footer />
         <ScrollTopButton />
+        <BottomNav />
       </body>
     </html>
   );
