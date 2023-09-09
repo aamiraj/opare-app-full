@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="drawer-content hidden lg:block">
         {/* navbar*/}
         <div className="navbar justify-between bg-primary">
-          <div className="hidden lg:block">
+          <div className="hidden lg:block max-w-[1360px] mx-auto">
             {/** menus for large device */}
 
             <ul className="menu menu-horizontal">

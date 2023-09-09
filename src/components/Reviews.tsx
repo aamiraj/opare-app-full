@@ -31,7 +31,7 @@ const Reviews = () => {
 
   return (
     <div>
-      <div className="tabs">
+      <div className="tabs justify-center">
         <button
           onClick={(event) => openTab(event, "ratings")}
           className="tab tab-lg tab-lifted tab-active"

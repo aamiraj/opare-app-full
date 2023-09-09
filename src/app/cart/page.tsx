@@ -1,12 +1,22 @@
-import CartProducts from "@/components/CartProducts";
+import CartLarge from "@/components/CartLarge";
+import CartReciept from "@/components/CartReciept";
+import CartSmall from "@/components/CartSmall";
 import React from "react";
 
-const Cart = () => {
+const page = () => {
   return (
-    <section>
-      <CartProducts />
+    <section className="max-w-[1360px] mx-auto my-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="hidden md:block md:col-span-2">
+        <CartLarge />
+      </div>
+      <div className="block md:hidden">
+        <CartSmall />
+      </div>
+      <div className="w-full h-full bg-white p-8">
+        <CartReciept />
+      </div>
     </section>
   );
 };
 
-export default Cart;
+export default page;

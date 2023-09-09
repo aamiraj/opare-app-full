@@ -14,7 +14,7 @@ const CartProducts = () => {
   const [checked, setChecked] = React.useState(true);
 
   return (
-    <div className="flex flex-col border border-primary gap-1 pt-1 w-80 mx-auto bg-white">
+    <div className="flex flex-col items-center lg:flex-row border border-primary gap-1 pt-1 w-80 lg:w-full mx-auto bg-white">
       <div className="flex justify-evenly items-center gap-1 py-1">
         <figure className="border border-secondary-300">
           <Image src={Spice} alt="spice" width={128} height={128} />
@@ -25,30 +25,26 @@ const CartProducts = () => {
         </div>
       </div>
       <div className="flex flex-col items-center gap-1 py-1">
-        <div className="grid grid-cols-2 gap-0 py-1">
-          <div className="text-start">
-            <p>Total:</p>
-            <p>Item Price:</p>
-            <p>Shipping Charge:</p>
-          </div>
-          <div className="text-end">
-            <p>120 Tk.</p>
-            <p>100 Tk.</p>
-            <p>20 Tk.</p>
-          </div>
-        </div>
-        <div className="join py-1">
-          <button className="btn border join-item">-</button>
-          <input
-            defaultValue={1}
-            name="quantity"
-            type="number"
-            className="input input-bordered rounded-none w-[75px] max-w-xs"
-          />
-          <button className="btn border join-item">+</button>
+        <div className="grid grid-cols-2 gap-2 py-1">
+          <p>Total:</p>
+          <p>120 Tk.</p>
+          <p>Item Price:</p>
+          <p>100 Tk.</p>
+          <p>Shipping Charge:</p>
+          <p>20 Tk.</p>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-0 pt-1">
+      <div className="join py-1">
+        <button className="btn btn-sm join-item">-</button>
+        <input
+          defaultValue={1}
+          name="quantity"
+          type="number"
+          className="input input-sm input-bordered rounded-none w-[75px] max-w-xs"
+        />
+        <button className="btn btn-sm join-item">+</button>
+      </div>
+      <div className="grid grid-cols-3 lg:grid-cols-1 gap-0 pt-1">
         {checked ? (
           <button
             type="button"

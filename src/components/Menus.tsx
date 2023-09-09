@@ -12,7 +12,7 @@ import {
 } from "react-icons/hi";
 
 const Menus = () => {
-  const [user] = React.useState(false);
+  const [user] = React.useState(true);
 
   return (
     <div className="w-full mx-auto p-8 lg:p-4">
@@ -63,10 +63,7 @@ const Menus = () => {
                 className="mt-3 z-10 p-2 shadow menu menu-md dropdown-content bg-base-100 w-28"
               >
                 <li>
-                  <Link href="/profile">Profile</Link>
-                </li>
-                <li>
-                  <Link href="/dashboard">dashboard</Link>
+                  <Link href="/my-account">My Account</Link>
                 </li>
                 <li>
                   <button

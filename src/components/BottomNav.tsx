@@ -7,7 +7,7 @@ import {
   HiOutlineUserCircle,
 } from "react-icons/hi";
 const BottomNav = () => {
-  const [user] = React.useState(false);
+  const [user] = React.useState(true);
 
   return (
     <div className="block m-16 lg:hidden">
@@ -21,7 +21,7 @@ const BottomNav = () => {
           <span className="btm-nav-label">Cart</span>
         </Link>
         {user ? (
-          <Link href="/profile" type="button">
+          <Link href="/my-account" type="button">
             <HiOutlineUserCircle />
             <span className="btm-nav-label">My Account</span>
           </Link>
