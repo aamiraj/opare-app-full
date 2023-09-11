@@ -34,7 +34,9 @@ const ProductsCard = ({ appProps }: { appProps: Details }) => {
           <p className="badge badge-info">{category}</p>
           <p>TK. {price}</p>
           <div className="card-actions">
-            <button className="btn btn-secondary">Order Now</button>
+            <Link href={`/productdetails/${id}`} className="btn btn-secondary">
+              See this product
+            </Link>
           </div>
         </div>
       </div>
