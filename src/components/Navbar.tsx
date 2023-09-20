@@ -18,7 +18,7 @@ const Navbar = () => {
             <ul className="menu menu-horizontal">
               {menus.map((item, i) => (
                 <li key={i}>
-                  <Link href={item.href}>{item.name}</Link>
+                  <Link className="link text-white no-underline" href={item.href}>{item.name}</Link>
                 </li>
               ))}
             </ul>
@@ -32,7 +32,7 @@ const Navbar = () => {
           {/* Sidebar content here */}
           {menus.map((item, i) => (
             <li key={i}>
-              <Link href={item.href}>{item.name}</Link>
+              <Link className="link no-underline" href={item.href}>{item.name}</Link>
             </li>
           ))}
         </ul>

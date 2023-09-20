@@ -63,7 +63,7 @@ export const amounts = [
 ];
 
 import Spice1 from "../assets/spice1.jpg";
-import Spice2 from "../assets/spice2.webp";
+import Spice2 from "../assets/spice2.jpeg";
 import Spice3 from "../assets/spice3.jpg";
 
 export const products = [
