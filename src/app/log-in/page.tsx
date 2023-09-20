@@ -32,9 +32,9 @@ const LogIn = () => {
                   name="password"
                 />
                 <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
+                  <Link href="#a" className="label-text-alt link link-hover">
                     Forgot password?
-                  </a>
+                  </Link>
                 </label>
 
                 <button type="submit" className="btn btn-primary">

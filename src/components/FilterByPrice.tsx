@@ -1,16 +1,12 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 
 const MIN_PRICE = 0;
 const MAX_PRICE = 10000;
 
 const FilterByPrice = () => {
   const [price, setPrice] = React.useState(MAX_PRICE);
-
-  useEffect(() => {
-    console.log(price);
-  }, [price]);
 
   function handleChangePrice(e: React.ChangeEvent<HTMLInputElement>) {
     const value = parseInt(e.target.value);

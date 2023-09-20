@@ -12,7 +12,7 @@ const Carousel = ({ carousels }: { carousels: Array<StaticImageData> }) => {
   );
   return (
     <div>
-      <Fade indicators={indicators} arrows={false} canSwipe={true}>
+      <Fade indicators={indicators}>
         {carousels.map((caros, i) => (
           <div key={i} className="eachslide">
             <div>

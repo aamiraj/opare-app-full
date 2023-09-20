@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -34,7 +34,9 @@ const CartReciept = () => {
           <Link href="/checkout" className="w-full btn btn-secondary">
             Checkout
           </Link>
-        ) : undefined}
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );
