@@ -1,4 +1,4 @@
-import ShippingAddress from "@/components/ShippingAddress";
+import ShippingAddress from "@/components/MyAccount/ShippingAddress";
 import React from "react";
 
 const page = () => {

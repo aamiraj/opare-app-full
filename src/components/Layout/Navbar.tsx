@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import "../styles/navbar.css";
+import "../../styles/navbar.css";
 import { menus } from "@/data/productsdata";
 import Link from "next/link";
 

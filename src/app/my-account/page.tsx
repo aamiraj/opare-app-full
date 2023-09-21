@@ -1,6 +1,6 @@
-import AddressCard from "@/components/AddressCard";
-import ProfileCard from "@/components/ProfileCard";
-import StatCard from "@/components/StatCard";
+import AddressCard from "@/components/Checkout/AddressCard";
+import ProfileCard from "@/components/MyAccount/ProfileCard";
+import StatCard from "@/components/MyAccount/StatCard";
 import React from "react";
 
 const page = () => {

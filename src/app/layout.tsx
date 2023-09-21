@@ -1,11 +1,11 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Layout/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Karla } from "next/font/google";
-import Footer from "@/components/Footer";
-import Menus from "@/components/Menus";
-import ScrollTopButton from "@/components/ScrollTopButton";
-import BottomNav from "@/components/BottomNav";
+import Footer from "@/components/Layout/Footer";
+import Menus from "@/components/Layout/Menus";
+import ScrollTopButton from "@/components/Layout/ScrollTopButton";
+import BottomNav from "@/components/Layout/BottomNav";
 
 const karla = Karla({ weight: ["400"], subsets: ["latin"] });
 

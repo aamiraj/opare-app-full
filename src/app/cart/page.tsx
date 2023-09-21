@@ -1,6 +1,6 @@
-import CartLarge from "@/components/CartLarge";
-import CartReciept from "@/components/CartReciept";
-import CartSmall from "@/components/CartSmall";
+import CartLarge from "@/components/Cart/CartLarge";
+import CartReciept from "@/components/Cart/CartReciept";
+import CartSmall from "@/components/Cart/CartSmall";
 import React from "react";
 
 const page = () => {

@@ -2,7 +2,7 @@
 
 import { products } from "@/data/productsdata";
 import { useParams } from "next/navigation";
-import StarRating from "@/components/StarRating";
+import StarRating from "@/components/ProductDetails/StarRating";
 import React from "react";
 import ProductCarousel from "./ProductCarousel";
 import Link from "next/link";

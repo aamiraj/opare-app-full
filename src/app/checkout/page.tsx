@@ -1,6 +1,6 @@
-import AddressCard from "@/components/AddressCard";
-import CartReciept from "@/components/CartReciept";
-import PaymentOption from "@/components/PaymentOption";
+import AddressCard from "@/components/Checkout/AddressCard";
+import CartReciept from "@/components/Cart/CartReciept";
+import PaymentOption from "@/components/Checkout/PaymentOption";
 import React from "react";
 
 const page = () => {

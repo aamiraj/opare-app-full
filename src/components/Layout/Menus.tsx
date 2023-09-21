@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Logo from "../assets/logo_big.png";
+import Logo from "../../assets/logo_big.png";
 import {
   HiMenuAlt2,
   HiOutlineShoppingCart,

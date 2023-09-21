@@ -1,9 +1,9 @@
-import Carousel from "@/components/Carousel";
+import Carousel from "@/components/Home/Carousel";
 import Carousel1 from "../assets/1.png";
 import Carousel2 from "../assets/2.png";
 import Carousel3 from "../assets/3.png";
 import { products } from "@/data/productsdata";
-import ProductsCard from "@/components/ProductsCard";
+import ProductsCard from "@/components/Shop/ProductsCard";
 
 export default function Home() {
   const images = [Carousel1, Carousel2, Carousel3];

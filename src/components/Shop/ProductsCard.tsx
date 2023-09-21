@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import Spice from "../assets/spice1.jpg";
+import Spice from "../../assets/spice1.jpg";
 import Link from "next/link";
 
 interface Details {
@@ -8,6 +8,7 @@ interface Details {
   title: string;
   img: Array<StaticImageData>;
   quantity: string | number;
+  stock: boolean;
   price: string | number;
   description: string;
   category: string;

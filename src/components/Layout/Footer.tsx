@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/logo_big.png";
+import Logo from "../../assets/logo_big.png";
 import Image from "next/image";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import Link from "next/link";

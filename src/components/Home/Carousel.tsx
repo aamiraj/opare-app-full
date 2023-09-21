@@ -4,7 +4,7 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import "../styles/carousel.css";
+import "../../styles/carousel.css";
 
 const Carousel = ({ carousels }: { carousels: Array<StaticImageData> }) => {
   const indicators = (index: number | undefined) => (

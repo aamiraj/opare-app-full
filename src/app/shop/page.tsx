@@ -1,6 +1,6 @@
 import React from "react";
 import { products } from "@/data/productsdata";
-import ProductsCard from "@/components/ProductsCard";
+import ProductsCard from "@/components/Shop/ProductsCard";
 
 const page = () => {
   return (

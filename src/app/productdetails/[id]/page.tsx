@@ -1,6 +1,6 @@
 import React from "react";
-import ProductDetails from "@/components/ProductDetails";
-import Reviews from "@/components/Reviews";
+import ProductDetails from "@/components/ProductDetails/ProductDetails";
+import Reviews from "@/components/ProductDetails/Reviews";
 
 const ProductDetail = () => {
   return (
