@@ -2,21 +2,9 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 import Spice from "../../assets/spice1.jpg";
 import Link from "next/link";
+import { ProductsType } from "@/data/productsdata";
 
-interface Details {
-  id: string;
-  title: string;
-  img: Array<StaticImageData>;
-  quantity: string | number;
-  stock: boolean;
-  price: string | number;
-  description: string;
-  category: string;
-  reviews: Array<{}>;
-  avgRating: string;
-}
-
-const ProductsCard = ({ appProps }: { appProps: Details }) => {
+const ProductsCard = ({ appProps }: { appProps: ProductsType }) => {
   const { id, title, category, price } = appProps;
   return (
     <div className="card rounded-none w-72 lg:w-64 mx-auto bg-white cursor-pointer hover:shadow-xl">

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Spice from "../assets/spice1.jpg";
+import Spice from "../../assets/spice1.jpg";
 import { HiOutlineTrash } from "react-icons/hi";
 
 const CartSmall = () => {

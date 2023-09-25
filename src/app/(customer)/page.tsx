@@ -1,7 +1,7 @@
 import Carousel from "@/components/Home/Carousel";
-import Carousel1 from "../assets/1.png";
-import Carousel2 from "../assets/2.png";
-import Carousel3 from "../assets/3.png";
+import Carousel1 from "../../assets/1.png";
+import Carousel2 from "../../assets/2.png";
+import Carousel3 from "../../assets/3.png";
 import { products } from "@/data/productsdata";
 import ProductsCard from "@/components/Shop/ProductsCard";
 

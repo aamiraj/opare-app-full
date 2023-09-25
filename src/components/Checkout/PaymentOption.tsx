@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
-import Cash from "../assets/cashondelivery.png";
-import Bkash from "../assets/bkash.jpg";
+import Cash from "../../assets/cashondelivery.png";
+import Bkash from "../../assets/bkash.jpg";
 import Image from "next/image";
 
 const PaymentOption = () => {

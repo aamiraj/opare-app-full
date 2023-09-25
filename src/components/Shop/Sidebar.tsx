@@ -1,5 +1,6 @@
 import React from "react";
-import { amounts, categories } from "@/data/productsdata";
+import { amounts } from "@/data/amounts";
+import { categories } from "@/data/categories";
 import FilterByPrice from "./FilterByPrice";
 
 const Sidebar = ({ Appprops }: { Appprops: React.ReactNode }) => {
@@ -31,7 +32,7 @@ const Sidebar = ({ Appprops }: { Appprops: React.ReactNode }) => {
                 </a>
               </div>
             ))}
-            <div className="divider"></div> 
+            <div className="divider"></div>
             {/** by amount products */}
             <div className="grid place-content-start font-bold text-2xl">
               By Amount
@@ -43,7 +44,7 @@ const Sidebar = ({ Appprops }: { Appprops: React.ReactNode }) => {
                 </a>
               </div>
             ))}
-            <div className="divider"></div> 
+            <div className="divider"></div>
             {/** by price products */}
             <div className="grid place-content-start font-bold text-2xl">
               By Price

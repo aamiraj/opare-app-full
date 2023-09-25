@@ -1,5 +1,5 @@
 import Navbar from "@/components/Layout/Navbar";
-import "./globals.css";
+import "../globals.css";
 import type { Metadata } from "next";
 import { Karla } from "next/font/google";
 import Footer from "@/components/Layout/Footer";

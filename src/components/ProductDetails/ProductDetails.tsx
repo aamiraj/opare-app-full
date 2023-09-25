@@ -82,7 +82,7 @@ const ProductDetails = () => {
                   {foundProd.stock ? "In Stock" : "Out of Stock"}
                 </span>
               </p>
-              <StarRating stars={parseInt(foundProd.avgRating)} />
+              <StarRating stars={foundProd.avgRating} />
               <div className="divider"></div>
               <p className="text-2xl text-error my-2">
                 TK. <span className="font-extrabold">{foundProd.price}</span>

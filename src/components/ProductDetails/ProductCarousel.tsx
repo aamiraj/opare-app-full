@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { Fade } from "react-slideshow-image";
-import "../styles/carousel.css";
+import "../../styles/carousel.css";
 
 const ProductCarousel = ({
   carousels,

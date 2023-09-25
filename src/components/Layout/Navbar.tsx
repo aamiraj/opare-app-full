@@ -2,7 +2,7 @@
 
 import React from "react";
 import "../../styles/navbar.css";
-import { menus } from "@/data/productsdata";
+import { menus } from "@/data/menus";
 import Link from "next/link";
 
 const Navbar = () => {
