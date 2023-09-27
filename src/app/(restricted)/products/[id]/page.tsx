@@ -13,7 +13,7 @@ export interface InputType {
   description: string;
 }
 
-const page = () => {
+const Page = () => {
   const { register, handleSubmit } = useForm<InputType>({
     defaultValues: {
       title: "Turmeric Powder 200g",
@@ -141,4 +141,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

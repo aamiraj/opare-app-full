@@ -13,7 +13,7 @@ export interface InputType {
   description: string;
 }
 
-const page = () => {
+const Page = () => {
   const { register, handleSubmit } = useForm<InputType>();
   const onSubmit: SubmitHandler<InputType> = (data) => console.log(data);
 
@@ -129,4 +129,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
